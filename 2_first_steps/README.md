@@ -126,10 +126,25 @@ Terraform uses these symbols to indicate the type of changes it will make
     terraform apply tfplan
 ```
 
+```
+    andyt530:~/environment/awstflab-code/2_first_steps (master) $ terraform apply tfplan
+    aws_vpc.main: Creating...
+    aws_vpc.main: Creation complete after 1s [id=vpc-06aefafe90da83b45]
+
+    Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+    The state of your infrastructure has been saved to the path
+    below. This state is required to modify and destroy your
+    infrastructure, so keep it safe. To inspect the complete state
+    use the `terraform show` command.
+
+    State path: terraform.tfstate
+    andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
+```
 
 Now check on the console and see if the VPC has been created:
 
-
+    ![Console](../images/console1.jpg)
 
 ## The Destroy Stage
 
