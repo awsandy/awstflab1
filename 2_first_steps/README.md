@@ -149,7 +149,7 @@ Now check on the console and see if the VPC has been created:
 ## The Destroy Stage
 
 ```
-    terrafrom destroy
+    terraform destroy
 ```
 
 ### Next
