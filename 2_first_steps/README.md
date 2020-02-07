@@ -2,7 +2,7 @@
 # Initialize the terraform resource provider
 
 In this section we will initiaize terraform and build a basic VPC using terraform infrastructire as code
-Terraform is used in several stages. y
+Terraform is used in several stages. 
 
 ![Terraform stages](../images/terraform.png)
 
@@ -61,11 +61,11 @@ https://www.terraform.io/docs/providers/aws/r/vpc.html
 
 Next run the terraform plan command to get terraform to tell you what it intends to do and save the plan in an output file called "tfpaln"
 
-```
+    ```
     terraform plan -out tfplan | more
-```
+    ```
 
-```
+    ```
     Refreshing Terraform state in-memory prior to plan...                                                
     The refreshed state will be used to calculate this plan, but will not be
     persisted to local or remote state storage.                                                                                                               
@@ -110,23 +110,23 @@ Next run the terraform plan command to get terraform to tell you what it intends
 
     andyt530:~/environment/awstflab-code/2_first_steps (master) $   
 
-```
+    ```
 
 This is a dry run and shows which actions will be made. This allows manual verification of the changes before running the apply step.
 
 Terraform uses these symbols to indicate the type of changes it will make
 
-    ![Terraform stages](../images/planSymbols.jpg)
+![Terraform stages](../images/planSymbols.jpg)
 
 ## The Apply Stage
 
 3. If all looks OK - you can go ahead and deploy the planned changes by using the apply command:
 
-```
+    ```
     terraform apply tfplan
-```
+    ```
 
-```
+    ```
     andyt530:~/environment/awstflab-code/2_first_steps (master) $ terraform apply tfplan
     aws_vpc.main: Creating...
     aws_vpc.main: Creation complete after 1s [id=vpc-06aefafe90da83b45]
@@ -141,63 +141,63 @@ Terraform uses these symbols to indicate the type of changes it will make
     State path: terraform.tfstate
     andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
 
-```
+    ```
 
 
 Now check on the console and see if the VPC has been created:
 
-    ![Console](../images/console1.jpg)
+![Console](../images/console1.jpg)
 
 ## The Destroy Stage
 
-```
+    ```
     terraform destroy
-```
+    ```
 
-```
-aws_vpc.main: Refreshing state... [id=vpc-06aefafe90da83b45]
+    ```
+    aws_vpc.main: Refreshing state... [id=vpc-06aefafe90da83b45]
 
-An execution plan has been generated and is shown below.
-Resource actions are indicated with the following symbols:
-  - destroy
+    An execution plan has been generated and is shown below.
+    Resource actions are indicated with the following symbols:
+    - destroy
 
-Terraform will perform the following actions:
+    Terraform will perform the following actions:
 
-  # aws_vpc.main will be destroyed
-  - resource "aws_vpc" "main" {
-      - arn                              = "arn:aws:ec2:eu-west-2:566972129213:vpc/vpc-06aefafe90da83b45" -> null
-      - assign_generated_ipv6_cidr_block = false -> null
-      - cidr_block                       = "10.0.0.0/16" -> null
-      - default_network_acl_id           = "acl-031a8db49363f5908" -> null
-      - default_route_table_id           = "rtb-04053a1933a1d37c9" -> null
-      - default_security_group_id        = "sg-0018e2d6fc38e42b5" -> null
-      - dhcp_options_id                  = "dopt-d9fcb1b1" -> null
-      - enable_dns_hostnames             = false -> null
-      - enable_dns_support               = true -> null
-      - id                               = "vpc-06aefafe90da83b45" -> null
-      - instance_tenancy                 = "default" -> null
-      - main_route_table_id              = "rtb-04053a1933a1d37c9" -> null
-      - owner_id                         = "566972129213" -> null
-      - tags                             = {
-          - "Name" = "main"
-        } -> null
-    }
+    # aws_vpc.main will be destroyed
+    - resource "aws_vpc" "main" {
+        - arn                              = "arn:aws:ec2:eu-west-2:566972129213:vpc/vpc-06aefafe90da83b45" -> null
+        - assign_generated_ipv6_cidr_block = false -> null
+        - cidr_block                       = "10.0.0.0/16" -> null
+        - default_network_acl_id           = "acl-031a8db49363f5908" -> null
+        - default_route_table_id           = "rtb-04053a1933a1d37c9" -> null
+        - default_security_group_id        = "sg-0018e2d6fc38e42b5" -> null
+        - dhcp_options_id                  = "dopt-d9fcb1b1" -> null
+        - enable_dns_hostnames             = false -> null
+        - enable_dns_support               = true -> null
+        - id                               = "vpc-06aefafe90da83b45" -> null
+        - instance_tenancy                 = "default" -> null
+        - main_route_table_id              = "rtb-04053a1933a1d37c9" -> null
+        - owner_id                         = "566972129213" -> null
+        - tags                             = {
+            - "Name" = "main"
+            } -> null
+        }
 
-Plan: 0 to add, 0 to change, 1 to destroy.
+    Plan: 0 to add, 0 to change, 1 to destroy.
 
-Do you really want to destroy all resources?
-  Terraform will destroy all your managed infrastructure, as shown above.
-  There is no undo. Only 'yes' will be accepted to confirm.
+    Do you really want to destroy all resources?
+    Terraform will destroy all your managed infrastructure, as shown above.
+    There is no undo. Only 'yes' will be accepted to confirm.
 
-  Enter a value: yes
+    Enter a value: yes
 
-aws_vpc.main: Destroying... [id=vpc-06aefafe90da83b45]
-aws_vpc.main: Destruction complete after 0s
+    aws_vpc.main: Destroying... [id=vpc-06aefafe90da83b45]
+    aws_vpc.main: Destruction complete after 0s
 
-Destroy complete! Resources: 1 destroyed.
-andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
+    Destroy complete! Resources: 1 destroyed.
+    andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
 
-```
+    ```
 
 
 ### Next
