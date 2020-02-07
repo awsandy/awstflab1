@@ -3,9 +3,8 @@
 ### AWS Account
 
 In order to complete this workshop, you'll need an AWS account and access to
-create AWS Identity and Access Management (IAM), Amazon Cognito, AWS Lambda,
-Amazon S3, Amazon API Gateway, AWS Amplify Console, Amazon DynamoDB, and AWS 
-Cloud9 resources within that account.
+create AWS Identity and Access Management (IAM), VPC, Subnets , EC2 and Kubernetes
+, and AWS Cloud9 resources within that account.
 
 The code and instructions in this workshop assume only one participant is using
 a given AWS account at a time. If you attempt sharing an account with another
@@ -41,16 +40,16 @@ Take a moment now and setup your Cloud9 development environment.
 
 1. Click **Next step**.
 
-1. You may leave **Environment settings** at their defaults of launching a new
-   **t2.micro** EC2 instance which will be paused after **30 minutes** of
-   inactivity.
+1. You may leave **Environment settings** at their defaults apart form instance type
+   select "Other Instance type" and select **t3.micro** 
+   Note by default this will be paused after **30 minutes** of inactivity.
 
-1. Click **Next step**.
+2. Click **Next step**.
 
-1. Review the environment settings and click **Create environment**. It will
+3. Review the environment settings and click **Create environment**. It will
    take several minutes for your environment to be provisioned and prepared.
 
-1. Once ready, your IDE will open to a welcome screen. Below that, you should
+4. Once ready, your IDE will open to a welcome screen. Below that, you should
    see a terminal prompt.
 
     You can run AWS CLI commands in here just like you would on your local computer.
