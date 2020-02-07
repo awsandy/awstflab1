@@ -36,11 +36,12 @@ Terraform is used in several stages
 
     ```
 
- 2. Now create a new file called *vpc.tf* that contains terraform code to create a new VPC
+ 2. Now create a new file called *vpc.tf* that contains terraform code to create a new VPC using the Cloud9 IDE
 
 ![Terraform stages](../images/IDE2.jpg)
 ![Terraform stages](../images/IDE3.jpg)
 
+![Terraform stages](../images/IDE4.jpg)
 ```
 resource "aws_vpc" "vpc1" {
   cidr_block       = "10.0.0.0/16"
@@ -54,7 +55,7 @@ resource "aws_vpc" "vpc1" {
 ### :star: Tips
 
 :bulb: Look at the terraform documentation for examples of how to write infrastructure as code
-[Terraform VPC]: https://www.terraform.io/docs/providers/aws/r/vpc.html
+https://www.terraform.io/docs/providers/aws/r/vpc.html
 
 
 ### Next
