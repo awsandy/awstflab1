@@ -69,8 +69,8 @@ In this section we will download a helper script that will install terraform int
 
 ### Next
 
-:white_check_mark: Proceed to the first module, [Static Web Hosting][static-web-hosting], 
-wherein you'll deploy a static web site via AWS Amplify Console.
+:white_check_mark: Proceed to the first module, [Connecting terraform to AWS][2_first_steps], 
+
 
 [region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
 [static-web-hosting]: ../1_StaticWebHosting/
