@@ -5,7 +5,8 @@
 
 
 ## Intro
-## Lab - Setup lab 
+## Lab 0 
+![Lab - Setup lab] (0_Setup/README.md)
 ## Lab - Initialize Terraform
 ## Lab - VPC
 ## Lab - Subnet
