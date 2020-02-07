@@ -69,7 +69,7 @@ In this section we will download a helper script that will install terraform int
 
 ### Next
 
-:white_check_mark: Proceed to the first module, [Connecting terraform to AWS](2_first_steps), 
+:white_check_mark: Proceed to the first module, [Connecting terraform to AWS](../2_first_steps), 
 
 
 [region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
