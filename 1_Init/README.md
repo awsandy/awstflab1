@@ -8,7 +8,7 @@ In this section we will download a helper script that will install terraform int
 
 **:white_check_mark: Step-by-step Instructions**
 
-1. Withon your Cloud9 IDE bash window run the following:
+1. Within your Cloud9 IDE bash window run the following:
 
 
     ```console
@@ -23,7 +23,7 @@ In this section we will download a helper script that will install terraform int
     awstflab-code  README.md
     ```
 
-![Cloud9](../images/IDE1.jpg)
+    ![Cloud9](../images/IDE1.jpg)
 
 ### Next
 
