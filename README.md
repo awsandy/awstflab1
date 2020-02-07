@@ -1,12 +1,12 @@
 # awstflab1 March 18th
 
-### collapsible markdown?
+
 
 
 
 ## Intro
 ## [Lab - Setup Lab](0_Setup)
-## Lab - Initialize Terraform
+## [Lab - Initialize Terraform](1_Init)
 ## Lab - VPC
 ## Lab - Subnet
 ## Lab - Security Group
@@ -17,10 +17,11 @@
 ## Lab - Delete The Cluster
 ## Lab - Create with Terraform
 
-# References
+### References
 
 https://github.com/terraform-providers/terraform-provider-aws/tree/master/examples
 
+### collapsible markdown?
 <details>
 <summary>CLICK ME</summary>
 <p>
