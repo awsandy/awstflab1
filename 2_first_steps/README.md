@@ -124,11 +124,9 @@ Terraform uses these symbols to indicate the type of changes it will make
 
     ```
     terraform apply tfplan
-
     ```
 
     ```
-
     andyt530:~/environment/awstflab-code/2_first_steps (master) $ terraform apply tfplan
     aws_vpc.main: Creating...
     aws_vpc.main: Creation complete after 1s [id=vpc-06aefafe90da83b45]
@@ -142,7 +140,6 @@ Terraform uses these symbols to indicate the type of changes it will make
 
     State path: terraform.tfstate
     andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
-
     ```
 
 Now check on the console and see if the VPC has been created:
