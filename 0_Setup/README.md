@@ -94,4 +94,4 @@ wherein you'll deploy a static web site via AWS Amplify Console.
 [region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
 [static-web-hosting]: ../1_StaticWebHosting/
 
-![Static website architecture](../images/spinning-gears.git)
+![Static website architecture](../images/spinning-gears.gif)
