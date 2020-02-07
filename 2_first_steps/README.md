@@ -40,6 +40,7 @@ we will step through these stages in our next activit
     ```
 
 
+
 ## The Plan Stage
 
  2. Now create a new file called *vpc.tf* that contains terraform code to create a new VPC using the Cloud9 IDE
@@ -111,7 +112,11 @@ Next run the terraform plan command to get terraform to tell you what it intends
 
 ```
 
+This is a dry run and shows which actions will be made. This allows manual verification of the changes before running the apply step.
 
+Terraform uses these symbols to indicate the type of changes it will make
+
+    ![Terraform stages](../images/planSymbols.jpg)
 
 ## The Apply Stage
 
@@ -128,6 +133,9 @@ Now check on the console and see if the VPC has been created:
 
 ## The Destroy Stage
 
+```
+    terrafrom destroy
+```
 
 ### Next
 
