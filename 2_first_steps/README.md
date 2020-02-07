@@ -2,7 +2,7 @@
 ### Initialize the terraform resource provider
 
 In this section we will initiaize terraform and build a basic VPC using terraform infrastructire as code
-
+Terraform is used in several stages
 
 ![Terraform stages](../images/terraform.png)
 
@@ -36,8 +36,25 @@ In this section we will initiaize terraform and build a basic VPC using terrafor
 
     ```
 
- 2. Now create a new file called vpc.tf that contains this terraform code to create  VPC
+ 2. Now create a new file called *vpc.tf* that contains terraform code to create a new VPC
 
+![Terraform stages](../images/IDE2.jpg)
+![Terraform stages](../images/IDE3.jpg)
+
+```
+resource "aws_vpc" "vpc1" {
+  cidr_block       = "10.0.0.0/16"
+
+  tags = {
+    Name = "main"
+  }
+}
+```
+
+### :star: Tips
+
+:bulb: Look at the terraform documentation for examples of how to write infrastructure as code
+[Terraform VPC]: https://www.terraform.io/docs/providers/aws/r/vpc.html
 
 
 ### Next
