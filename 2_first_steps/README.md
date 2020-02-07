@@ -116,7 +116,7 @@ This is a dry run and shows which actions will be made. This allows manual verif
 
 Terraform uses these symbols to indicate the type of changes it will make
 
-![Terraform stages](../images/planSymbols.jpg)
+![Terraform stages](../images/planSymbols.png)
 
 ## The Apply Stage
 
@@ -124,9 +124,11 @@ Terraform uses these symbols to indicate the type of changes it will make
 
     ```
     terraform apply tfplan
+
     ```
 
     ```
+
     andyt530:~/environment/awstflab-code/2_first_steps (master) $ terraform apply tfplan
     aws_vpc.main: Creating...
     aws_vpc.main: Creation complete after 1s [id=vpc-06aefafe90da83b45]
@@ -143,12 +145,13 @@ Terraform uses these symbols to indicate the type of changes it will make
 
     ```
 
-
 Now check on the console and see if the VPC has been created:
 
 ![Console](../images/console1.jpg)
 
 ## The Destroy Stage
+
+4. Finally lets remove the VPC we created with the terraform destroy command
 
     ```
     terraform destroy
