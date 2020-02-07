@@ -1,5 +1,5 @@
 
-### Initialize the terraform resource provider
+# Initialize the terraform resource provider
 
 In this section we will initiaize terraform and build a basic VPC using terraform infrastructire as code
 Terraform is used in several stages. y
@@ -44,20 +44,12 @@ we will step through these stages in our next activit
 
  2. Now create a new file called *vpc.tf* that contains terraform code to create a new VPC using the Cloud9 IDE
 
-![Terraform stages](../images/IDE2.jpg)
-![Terraform stages](../images/IDE3.jpg)
+    ![Terraform stages](../images/IDE2.jpg)
+    ![Terraform stages](../images/IDE3.jpg)
 
-![Terraform stages](../images/IDE4.jpg)
-![Terraform stages](../images/IDE5.jpg)
-```
-resource "aws_vpc" "vpc1" {
-  cidr_block       = "10.0.0.0/16"
+    ![Terraform stages](../images/IDE4.jpg)
+    ![Terraform stages](../images/IDE5.jpg)
 
-  tags = {
-    Name = "main"
-  }
-}
-```
 
 ### :star: Tips
 
@@ -69,53 +61,53 @@ https://www.terraform.io/docs/providers/aws/r/vpc.html
 Next run the terraform plan command to get terraform to tell you what it intends to do and save the plan in an output file called "tfpaln"
 
 ```
-terraform plan -out tfplan | more
+    terraform plan -out tfplan | more
 ```
 
 ```
-Refreshing Terraform state in-memory prior to plan...                                                
-The refreshed state will be used to calculate this plan, but will not be
-persisted to local or remote state storage.                                                                                                               
-------------------------------------------------------------------------                                                                                 
-An execution plan has been generated and is shown below.                                                                                                  
-Resource actions are indicated with the following symbols:                                              
-  + create                                                                                                                                              
-Terraform will perform the following actions:                                                                                                          
-  # aws_vpc.main will be created                                                 
+    Refreshing Terraform state in-memory prior to plan...                                                
+    The refreshed state will be used to calculate this plan, but will not be
+    persisted to local or remote state storage.                                                                                                               
+    ------------------------------------------------------------------------                                                                                 
+    An execution plan has been generated and is shown below.                                                                                                  
+    Resource actions are indicated with the following symbols:                                              
+    + create                                                                                                                                              
+    Terraform will perform the following actions:                                                                                                          
+    # aws_vpc.main will be created                                                 
 
-  + resource "aws_vpc" "main" {
-      + arn                              = (known after apply)
-      + assign_generated_ipv6_cidr_block = false
-      + cidr_block                       = "10.0.0.0/16"
-      + default_network_acl_id           = (known after apply)
-      + default_route_table_id           = (known after apply)
-      + default_security_group_id        = (known after apply)
-      + dhcp_options_id                  = (known after apply)
-      + enable_classiclink               = (known after apply)
-      + enable_classiclink_dns_support   = (known after apply)
-      + enable_dns_hostnames             = (known after apply)
-      + enable_dns_support               = true
-      + id                               = (known after apply)
-      + instance_tenancy                 = "default"
-      + ipv6_association_id              = (known after apply)
-      + ipv6_cidr_block                  = (known after apply)
-      + main_route_table_id              = (known after apply)
-      + owner_id                         = (known after apply)
-      + tags                             = {
-          + "Name" = "main"
+    + resource "aws_vpc" "main" {
+        + arn                              = (known after apply)
+        + assign_generated_ipv6_cidr_block = false
+        + cidr_block                       = "10.0.0.0/16"
+        + default_network_acl_id           = (known after apply)
+        + default_route_table_id           = (known after apply)
+        + default_security_group_id        = (known after apply)
+        + dhcp_options_id                  = (known after apply)
+        + enable_classiclink               = (known after apply)
+        + enable_classiclink_dns_support   = (known after apply)
+        + enable_dns_hostnames             = (known after apply)
+        + enable_dns_support               = true
+        + id                               = (known after apply)
+        + instance_tenancy                 = "default"
+        + ipv6_association_id              = (known after apply)
+        + ipv6_cidr_block                  = (known after apply)
+        + main_route_table_id              = (known after apply)
+        + owner_id                         = (known after apply)
+        + tags                             = {
+            + "Name" = "main"
+            }
         }
-    }
 
-Plan: 1 to add, 0 to change, 0 to destroy.
+    Plan: 1 to add, 0 to change, 0 to destroy.
 
-------------------------------------------------------------------------
+    ------------------------------------------------------------------------
 
-This plan was saved to: tfplan
+    This plan was saved to: tfplan
 
-To perform exactly these actions, run the following command to apply:
-    terraform apply "tfplan"
+    To perform exactly these actions, run the following command to apply:
+        terraform apply "tfplan"
 
-andyt530:~/environment/awstflab-code/2_first_steps (master) $   
+    andyt530:~/environment/awstflab-code/2_first_steps (master) $   
 
 ```
 
@@ -126,7 +118,7 @@ andyt530:~/environment/awstflab-code/2_first_steps (master) $
 3. If all looks OK - you can go ahead and deploy the planned changes by using the apply command:
 
 ```
-terraform apply tfplan
+    terraform apply tfplan
 ```
 
 
