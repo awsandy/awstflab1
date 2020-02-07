@@ -13,6 +13,8 @@ In this section we will download a helper script that will install terraform int
 
     ```console
     andyt530:~/environment $ git clone https://github.com/andyt530/awstflab-code.git
+    ```
+    ```
     Cloning into 'awstflab-code'...
     remote: Enumerating objects: 8, done.
     remote: Counting objects: 100% (8/8), done.
@@ -31,6 +33,8 @@ In this section we will download a helper script that will install terraform int
 
     ```
     andyt530:~/environment/awstflab-code/scripts (master) $ sh -v 01-install-terraform.sh
+    ```
+    ```
     wget https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
     --2020-02-07 11:39:38--  https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
     Resolving releases.hashicorp.com (releases.hashicorp.com)... 199.232.57.183, 2a04:4e42:4b::439
@@ -54,6 +58,8 @@ In this section we will download a helper script that will install terraform int
 
     ```
     andyt530:~/environment/awstflab-code/scripts (master) $ terraform help
+    ```
+    ```
     Usage: terraform [-version] [-help] <command> [args]
 
     ..... serveral other lines not shown here .....
