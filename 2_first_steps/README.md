@@ -42,6 +42,7 @@ Terraform is used in several stages
 ![Terraform stages](../images/IDE3.jpg)
 
 ![Terraform stages](../images/IDE4.jpg)
+![Terraform stages](../images/IDE5.jpg)
 ```
 resource "aws_vpc" "vpc1" {
   cidr_block       = "10.0.0.0/16"
