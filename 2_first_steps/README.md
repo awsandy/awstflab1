@@ -13,8 +13,8 @@ In this section we will initiaize terraform and build a basic VPC using terrafor
 
 
     ```console
-
-    andyt530:~/environment/awstflab-code/2_first_steps (master) $ terraform init                        ```                                                                                        
+    andyt530:~/environment/awstflab-code/2_first_steps (master) $ terraform init   
+    ```                                                                                        
 
     ```
     Initializing the backend...
@@ -36,7 +36,7 @@ In this section we will initiaize terraform and build a basic VPC using terrafor
 
     ```
 
-    ![Cloud9](../images/IDE1.jpg)
+ 2. Now create a new file called vpc.tf that contains this terraform code to create  VPC
 
 
 

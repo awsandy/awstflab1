@@ -7,7 +7,7 @@
 ## Intro
 ## [Lab0 - Setup Lab](0_Setup)
 ## [Lab1 - Initialize Terraform](1_Init)
-## [Lab2 - First steps](2_first_steps_)
+## [Lab2 - First steps](2_first_steps)
 ## Lab3 - VPC
 ## Lab - Subnet
 ## Lab - Security Group
