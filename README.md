@@ -1,22 +1,16 @@
 # awstflab1 March 18th
 
 
-
-
-
 ## Intro
 ## [Lab0 - Setup Lab](0_Setup)
 ## [Lab1 - Initialize Terraform](1_Init)
 ## [Lab2 - First steps](2_first_steps)
-## Lab3 - VPC
-## Lab - Subnet
-## Lab - Security Group
-## Lab - EC2
+## [Lab3 -](3_add_resources)
 
-## Lab - Create EKS Cluster
-## Lab - Reverse the Cluster
-## Lab - Delete The Cluster
-## Lab - Create with Terraform
+## [Lab4 - Create EKS Cluster](4_create_eks)
+## [Lab5 - Reverse the Cluster](5_pull_terraform)
+## [Lab6 - Delete The Cluster](6_delete-eks)
+## [Lab7 - Recreate with Terraform](7_terraform_eks)
 
 ### References
 
