@@ -12,7 +12,7 @@ In this section we will download a helper script that will install terraform int
 
 
     ```console
-    andyt530:~/environment $ git clone https://github.com/andyt530/awstflab-code.git
+    andyt530:~/environment $ git clone git clone https://github.com/awsandy/awstflab1-code.git
     ```
     
     Cloning into 'awstflab-code'...
