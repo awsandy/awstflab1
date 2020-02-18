@@ -13,10 +13,22 @@ time eksctl delete cluster --name [yourclustername] --region eu-west-1
 ```
 
 ```
-output
+[ℹ]  eksctl version 0.11.1
+[ℹ]  using region eu-west-1
+[ℹ]  deleting EKS cluster "ateksf"
+[ℹ]  deleting Fargate profile "fp-default"
+[ℹ]  deleted Fargate profile "fp-default"
+[ℹ]  deleted 1 Fargate profile(s)
+[✔]  kubeconfig has been updated
+[ℹ]  cleaning up LoadBalancer services
+[ℹ]  2 sequential tasks: { delete nodegroup "ng-96e8ad24", delete cluster control plane "ateksf" [async] }
+[ℹ]  will delete stack "eksctl-ateksf-nodegroup-ng-96e8ad24"
+[ℹ]  waiting for stack "eksctl-ateksf-nodegroup-ng-96e8ad24" to get deleted
+[ℹ]  will delete stack "eksctl-ateksf-cluster"
+[✔]  all cluster resources were deleted
+
 ```
 
-   
 
 
 ### :star: Tips
