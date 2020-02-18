@@ -119,6 +119,7 @@ This is a dry run and shows which actions will be made. This allows manual verif
 
 Terraform uses these symbols to indicate the type of changes it will make
 
+[//]: # (Pull in image this way to control size)
 
 <img width="320" height="250" src="https://github.com/awsandy/awstflab1/raw/master/images/planSymbols.png" />
 
