@@ -102,16 +102,13 @@ State path: terraform.tfstate
 
 ### :star: Tips
 
-:bulb: <span style="color:red"> *If you see an error (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.* </span>
-
-```diff
-- Some Markdown text with <span style="color:blue">some <em>blue</em> text</span></p>
+:bulb: ```diff
+- If you see errors (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.* 
 ```
-
 The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a second time will resolve this.
 
 
-3. Using the AWS command line retreive the credentials for you new cluster
+1. Using the AWS command line retreive the credentials for you new cluster
 
 ```console
 $ aws eks update-kubeconfig --name [yourclustername]
