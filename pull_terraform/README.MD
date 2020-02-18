@@ -28,7 +28,7 @@ an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
 
 ### Next
 
-:white_check_mark: Proceed to the next module, [Delete the EKS cluster !](delete_eks). 
+:white_check_mark: Proceed to the next module, [Delete the EKS cluster !](../delete_eks). 
 
 
 
