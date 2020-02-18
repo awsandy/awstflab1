@@ -1,14 +1,20 @@
-## Lab 3 Add resources
+## Delete the EKS cluster
 
-### In this lab we will add soem basic resources to the VPC using terraform
+### Now we have soem Terraform available to re-create the cluster use the eksctl command to delete the cluster
+
+
 
 1. Delete the EKS cluster
    
+```console
+time eksctl delete cluster --name ateks1 --region eu-west-1
+```
 
+```
+output
+```
 
    
-
-
 
 
 ### :star: Tips

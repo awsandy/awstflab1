@@ -46,13 +46,32 @@ $ time eksctl create cluster --name=[yourinitials+eks] --fargate --alb-ingress-a
 ```
 
 ```
-output here
+[ℹ]  eksctl version 0.11.1
+[ℹ]  using region eu-west-1
+[ℹ]  setting availability zones to [eu-west-1b eu-west-1c eu-west-1a]
+[ℹ]  subnets for eu-west-1b - public:192.168.0.0/19 private:192.168.96.0/19
 ```
+**..... output lines removed for brevity .....**
+**Note a create operatiobn will take about 15 minues to complete**
+
+**Make a note of the stack name**
+```
+[ℹ]  building cluster stack "eksctl-ateksf-cluster"
+[ℹ]  deploying stack "eksctl-ateksf-cluster"
+```
+
+
+
 
 Next check the cluster has created ok
 ```
 $ kubectl get nodes
 ```
+```
+output
+```
+
+
 
 3. Examine all the resources that have been created
    
