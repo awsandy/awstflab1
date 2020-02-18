@@ -88,9 +88,7 @@ an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
 
 ### Next
 
-:white_check_mark: Proceed to the next module, [Tools initialization](../Init), 
+:white_check_mark: Proceed to the next module, [Tools initialization](../Init).
 
 
-[region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
-[static-web-hosting]: ../1_StaticWebHosting/
 

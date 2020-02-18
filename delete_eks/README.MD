@@ -28,6 +28,6 @@ an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
 
 ### Next
 
-:white_check_mark: Proceed to the next module, [Re-create the EKS cluster from Terraform](terraform_eks).
+:white_check_mark: Proceed to the next module, [Re-create the EKS cluster from Terraform](../terraform_eks).
 
 
