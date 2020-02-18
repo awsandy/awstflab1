@@ -1,6 +1,21 @@
 # awstflab1 March 18th
 
 
+### Modules
+
+This workshop is divided into several modules. Each module describes a scenario of
+what we're going to build and step-by-step directions to help you implement the
+architecture and verify your work.
+
+| Module | Description |
+| ---------------- | -------------------------------------------------------- |
+| [Initial Setup][0_setup] | Login to your lab AWS account and create an AWS Cloud9 environment in region eu-west-1 (Ireland). |
+| [Initialize Terraform][1_Init] | Configure user management for the website using Amazon Cognito. |
+| [Serverless Backend][serverless-backend] | Create an AWS Lambda function that will persist data to an Amazon DynamoDB table. |
+| [RESTful APIs][restful-apis] | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
+
+
+
 ## Intro
 ## [Lab0 - Setup Lab](0_Setup)
 ## [Lab1 - Initialize Terraform](1_Init)
