@@ -9,23 +9,17 @@ architecture and verify your work.
 
 | Module | Description |
 | ---------------- | -------------------------------------------------------- |
-| [Initial Setup][0_setup] | Login to your lab AWS account and create an AWS Cloud9 environment in region eu-west-1 (Ireland). |
-| [Initialize Terraform][1_Init] | Configure user management for the website using Amazon Cognito. |
-| [Serverless Backend][serverless-backend] | Create an AWS Lambda function that will persist data to an Amazon DynamoDB table. |
-| [RESTful APIs][restful-apis] | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
+| [Initial Setup](0_setup) | Login to your lab AWS account and create an AWS Cloud9 environment in region eu-west-1 (Ireland). |
+| [Initialize Terraform](Init) | Configure user management for the website using Amazon Cognito. |
+| [First steps with Terraform](first_steps) | Create an AWS Lambda function that will persist data to an Amazon DynamoDB table. |
+| [Add Resources](add_resources) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
+| [Create an EKS Cluster with the command line](create_eks)] | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
+| [Automatically generate Terraform code for EKS](pull_terraform) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
+| [Delete the EKS cluster !](delete-eks) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
+| [Re-create the EKS cluster from Terraform](terraform_eks) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
 
+After you have completed the workshop you can delete all of the resources that were created by following the [cleanup guide][cleanup].
 
-
-## Intro
-## [Lab0 - Setup Lab](0_Setup)
-## [Lab1 - Initialize Terraform](1_Init)
-## [Lab2 - First steps](2_first_steps)
-## [Lab3 -](3_add_resources)
-
-## [Lab4 - Create EKS Cluster](4_create_eks)
-## [Lab5 - Reverse the Cluster](5_pull_terraform)
-## [Lab6 - Delete The Cluster](6_delete-eks)
-## [Lab7 - Recreate with Terraform](7_terraform_eks)
 
 ### References
 
