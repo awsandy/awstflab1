@@ -8,9 +8,9 @@
 
 A setup script has been provided to install the necessaru tools - jq and eksctl 
 
-```
-cd ~/environment/awstflab1-code/scripts
-./02-install-eksctl.sh
+```console
+$ cd ~/environment/awstflab1-code/scripts
+$ ./02-install-eksctl.sh
 ```
 
 ```
@@ -40,9 +40,9 @@ Client Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.3", GitCom
 
 2. Create a Kubernetes (EKS) cluster
 
-```
+```console
 $ export AWS_REGION=eu-west-1
-$ time eksctl create cluster --name=ateksf --nodes=2 --node-type="t3.large" --managed --fargate --alb-ingress-access --region=${AWS_REGION} --ssh-public-key "~/.ssh/id_rsa.pub"
+$ time eksctl create cluster --name=ateksf --fargate --alb-ingress-access --region=${AWS_REGION} --ssh-public-key "~/.ssh/id_rsa.pub"
 ```
 
 ```

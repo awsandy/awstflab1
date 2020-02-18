@@ -29,9 +29,7 @@ an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
 
 ### Next
 
-:white_check_mark: Proceed to the next module, [Create an EKS Cluster](../create_eks), 
+:white_check_mark: Proceed to the next module, [Create an EKS Cluster](../create_eks).
 
 
-[region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
-[Create a Kubernetes Cluster]: ../4_create_eks/
 
