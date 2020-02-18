@@ -64,7 +64,7 @@ Next run the terraform plan command to get terraform to tell you what it intends
  
 
 ```console
-   $ terraform plan -out tfplan | more
+   $ terraform plan -out tfplan
 ```
 
 ```
@@ -120,6 +120,9 @@ This is a dry run and shows which actions will be made. This allows manual verif
 Terraform uses these symbols to indicate the type of changes it will make
 
 ![Terraform stages](../images/planSymbols.png)
+
+<img width="200" height="200" src="https://raw.githubusercontent.com/awsandy/awstflab1/master/images/planSymbols.png" />
+
 
 ## The Apply Stage
 
@@ -204,9 +207,5 @@ Now check on the console and see if the VPC has been created:
 
 ### Next
 
-:white_check_mark: Proceed to the first module, [Add additional resources](../add_resources), 
-
-
-[region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
-[static-web-hosting]: ../1_StaticWebHosting/
+:white_check_mark: Proceed to the first module, [Add additional resources](../add_resources). 
 
