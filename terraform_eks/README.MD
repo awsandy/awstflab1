@@ -104,7 +104,8 @@ State path: terraform.tfstate
 
 :bulb: 
 ```diff
-- If you see errors (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.* 
+- *If you see errors (red text) during this operation 
+- Just repeat the terraform plan and terraform apply commands one more time.* 
 ```
 The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a second time will resolve this.
 
