@@ -2,7 +2,7 @@
 
 ### In this lab we will add soem basic resources to the VPC using terraform
 
-1. A public subnet
+1. Delete the EKS cluster
    
 
 2. A Security Group
