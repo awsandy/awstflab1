@@ -1,15 +1,36 @@
-## Lab 3 Add resources
+## Cleanup resources
 
-### In this lab we will add soem basic resources to the VPC using terraform
+### In this lab 
 
-1. A public subnet
+1. Destroy the cluster with Terraform
+
+```console
+$ terraform destroy
+```
+**..... output lines removed for brevity .....**
+```
+          - "eksctl.cluster.k8s.io/v1alpha1/cluster-name" = "ateks1"
+          - "kubernetes.io/cluster/ateks1"                = "shared"
+        } -> null
+    }
+
+Plan: 0 to add, 0 to change, 55 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+```
+  Enter a value: **yes**
+```
+aws_route_table_association.rtbassoc-0115c7b18869a02f3: Destroying... [id=rtbassoc-0115c7b18869a02f3]
+aws_route_table.rtb-0ea284cd4547961cd: Destroying... [id=rtb-0ea284cd4547961cd]
+aws_route_table_association.rtbassoc-0f4e141aaf15a074a: Destroying... [id=rtbassoc-0f4e141aaf15a074a]
+aws_route_table.rtb-033220495352e8a9f: Destroying... [id=rtb-033220495352e8a9f]
+aws_security_group_rule.sg-02984c8f9c87633cf: Destroying... [id=sgrule-2008478280]
+```
    
-
-2. A Security Group
-
-
-3. A simple EC2 instance hosted in our subnet, protected by the security group
-   
+**..... output lines removed for brevity .....**
+**Note a destroy operatiobn will take about 15 minues to complete**
 
 
 

@@ -1,17 +1,40 @@
-## Lab 3 Add resources
+## Re-create the EKS cluster using Terraform
 
-### In this lab we will add soem basic resources to the VPC using terraform
+### In this lab we will
 
-1. A public subnet
+1. Generate a terraform plan - and save the plan in a file
    
+```console
+$ terraform plan -out tfplan
+```
+```
 
-2. A Security Group
+```
+**..... output lines removed for brevity .....**
+```
 
+```
 
-3. A simple EC2 instance hosted in our subnet, protected by the security group
-   
+2. "apply" the plan - which creates the resources in your AWS account
+```console
+$ terraform apply tfplan
+```
 
+```
+output
+```
 
+```
+**..... output lines removed for brevity .....**
+```
+more output
+```
+
+3. Using the AWS command line retreive the credentials for you new cluster
+
+```console
+$ aws eks 
+```
 
 
 ### :star: Tips
