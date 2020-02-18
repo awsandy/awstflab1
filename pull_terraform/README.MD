@@ -1,6 +1,6 @@
-## Lab 3 Add resources
+## Automatically generate Terraform code for your EKS cluster
 
-### In this lab we will add soem basic resources to the VPC using terraform
+### In this lab 
 
 1. Run the tool to create the Terraform for EKS
 
@@ -9,7 +9,7 @@ $ ./eks2th.sh
 ```
 
 ```
-Account ID = 566972129213
+Account ID = 111122223333
 Terraform Resource Type Filter = 
  
 terraform init
@@ -63,9 +63,9 @@ This means that Terraform did not detect any differences between your
 configuration and real physical resources that exist. As a result, no
 actions need to be performed.
 ---------------------------------------------------------------------------
-aws2tf output files are in generated/tf.566972129213-eks
+aws2tf output files are in generated/tf.111122223333-eks
 ---------------------------------------------------------------------------
-f8ffc212119c:aws2tf awsandy$ 
+$ 
 
 ```
    
@@ -73,7 +73,7 @@ f8ffc212119c:aws2tf awsandy$
 2. Examine the terraform files that have been created
 
 ```console
-$ cd generated/tf.566972129213-eks
+$ cd generated/tf.111122223333-eks
 $ ls *.tf
 ```
 
