@@ -1,6 +1,6 @@
 ## Delete the EKS cluster
 
-### Now we have soem Terraform available to re-create the cluster use the eksctl command to delete the cluster
+### Now we have some Terraform available to re-create the cluster. Use the eksctl command to delete the cluster
 
 
 
@@ -29,6 +29,9 @@ time eksctl delete cluster --name [yourclustername] --region eu-west-1
 
 ```
 
+Next find and delete the corresponding VPC in the AWS console
+
+
 
 
 ### :star: Tips
@@ -40,7 +43,6 @@ an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
 ### :star: Recap
 
 :key: Use a unique personal or development [AWS account](#aws-account)
-
 :key: Keep your [AWS Cloud9 IDE](#aws-cloud9-ide) opened in a tab
 
 ### Next
