@@ -12,7 +12,7 @@ In this section we will download a helper script that will install terraform int
 
 
     ```console
-    andyt530:~/environment $ git clone git clone https://github.com/awsandy/awstflab1-code.git
+    ~/environment $ git clone git clone https://github.com/awsandy/awstflab1-code.git
     ```
     
     Cloning into 'awstflab-code'...
@@ -21,10 +21,10 @@ In this section we will download a helper script that will install terraform int
     remote: Compressing objects: 100% (7/7), done.
     remote: Total 8 (delta 0), reused 4 (delta 0), pack-reused 0
     Unpacking objects: 100% (8/8), done.
-    andyt530:~/environment $ ls
+    ~/environment $ ls
     awstflab-code  README.md
-    andyt530:~/environment $ cd awstflab-code/scripts
-    andyt530:~/environment/awstflab-code/scripts (master) $ 
+    ~/environment $ cd awstflab-code/scripts
+    ~/environment/awstflab-code/scripts (master) $ 
     ```
 
     ![Cloud9](../images/IDE1.jpg)
@@ -32,7 +32,7 @@ In this section we will download a helper script that will install terraform int
 2. Run the helper script to install terraform
 
     ```
-    andyt530:~/environment/awstflab-code/scripts (master) $ sh -v 01-install-terraform.sh
+    ~/environment/awstflab-code/scripts (master) $ sh -v 01-install-terraform.sh
     ```
     ```
     wget https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
@@ -51,26 +51,26 @@ In this section we will download a helper script that will install terraform int
     Archive:  terraform_0.12.18_linux_amd64.zip
     inflating: terraform               
     sudo mv terraform /usr/local/bin/
-    andyt530:~/environment/awstflab-code/scripts (master) $ 
+    ~/environment/awstflab-code/scripts (master) $ 
     ```
 
 3. check terraform is installed correctly
 
     ```
-    andyt530:~/environment/awstflab-code/scripts (master) $ terraform help
+    ~/environment/awstflab-code/scripts (master) $ terraform help
     ```
     ```
     Usage: terraform [-version] [-help] <command> [args]
 
     ..... serveral other lines not shown here .....
 
-    andyt530:~/environment/awstflab-code/scripts (master) $ 
+    ~/environment/awstflab-code/scripts (master) $ 
     ```
 
 4. return to your working directory ready for the next part
    ```
-    andyt530:~/environment/awstflab-code/scripts (master) $ cd ~/environment
-    andyt530:~/environment $ 
+    ~/environment/awstflab-code/scripts (master) $ cd ~/environment
+    ~/environment $ 
    ```
 
 ### Next

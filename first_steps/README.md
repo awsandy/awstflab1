@@ -35,7 +35,7 @@ we will step through these stages in our next activit
     If you ever set or change modules or backend configuration for Terraform,
     rerun this command to reinitialize your working directory. If you forget, other
     commands will detect it and remind you to do so if necessary.
-    andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
+    ~/environment/awstflab-code/2_first_steps (master) $ 
 
     ```
 
@@ -111,7 +111,7 @@ Next run the terraform plan command to get terraform to tell you what it intends
     To perform exactly these actions, run the following command to apply:
         terraform apply "tfplan"
 
-    andyt530:~/environment/awstflab-code/2_first_steps (master) $   
+    ~/environment/awstflab-code/2_first_steps (master) $   
 
 ```
 
@@ -144,7 +144,7 @@ Terraform uses these symbols to indicate the type of changes it will make
     use the `terraform show` command.
 
     State path: terraform.tfstate
-    andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
+    ~/environment/awstflab-code/2_first_steps (master) $ 
     ```
 
 Now check on the console and see if the VPC has been created:
@@ -200,7 +200,7 @@ Now check on the console and see if the VPC has been created:
     aws_vpc.main: Destruction complete after 0s
 
     Destroy complete! Resources: 1 destroyed.
-    andyt530:~/environment/awstflab-code/2_first_steps (master) $ 
+    ~/environment/awstflab-code/2_first_steps (master) $ 
 
     ```
 
