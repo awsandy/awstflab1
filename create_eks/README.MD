@@ -42,7 +42,7 @@ Client Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.3", GitCom
 
 ```console
 $ export AWS_REGION=eu-west-1
-$ time eksctl create cluster --name=ateksf --fargate --alb-ingress-access --region=${AWS_REGION} --ssh-public-key "~/.ssh/id_rsa.pub"
+$ time eksctl create cluster --name=[yourinitials+eks] --fargate --alb-ingress-access --region=${AWS_REGION} --ssh-public-key "~/.ssh/id_rsa.pub"
 ```
 
 ```
@@ -59,7 +59,17 @@ $ kubectl get nodes
 Using the AWS console find the VPC that EKS created - what other resources have been created ? 
 
 Can you find the stack set that was run by eksctl - what resources did it create ?
-   
+### How to do that
+<details>
+<summary>See how - click me</summary>
+<p>
+Using the Console Navigate to CloudFormation!
+
+```python
+print("hello world!")
+```
+</p>
+</details>
 
 
 
@@ -77,9 +87,7 @@ an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
 
 ### Next
 
-:white_check_mark: Proceed to the next module, [Autmatically create the Terraform for the EKS cluster](../pull_terraform), 
+:white_check_mark: Proceed to the next module, [Autmatically create the Terraform for the EKS cluster](../pull_terraform).
 
 
-[region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/
-[Create a Kubernetes Cluster]: ../4_create_eks/
 
