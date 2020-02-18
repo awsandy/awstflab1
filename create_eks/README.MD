@@ -44,33 +44,56 @@ Client Version: version.Info{Major:"1", Minor:"17", GitVersion:"v1.17.3", GitCom
 $ export AWS_REGION=eu-west-1
 $ time eksctl create cluster --name=[yourinitials+eks] --fargate --alb-ingress-access --region=${AWS_REGION} --ssh-public-key "~/.ssh/id_rsa.pub"
 ```
-
+**Note a create operatiobn will take about 15 minues to complete**
 ```
 [ℹ]  eksctl version 0.11.1
 [ℹ]  using region eu-west-1
 [ℹ]  setting availability zones to [eu-west-1b eu-west-1c eu-west-1a]
 [ℹ]  subnets for eu-west-1b - public:192.168.0.0/19 private:192.168.96.0/19
 ```
-**..... output lines removed for brevity .....**
-**Note a create operatiobn will take about 15 minues to complete**
+
 
 **Make a note of the stack name**
 ```
 [ℹ]  building cluster stack "eksctl-ateksf-cluster"
 [ℹ]  deploying stack "eksctl-ateksf-cluster"
 ```
+**..... output lines removed for brevity .....**
+
+```
+[ℹ]  "coredns" is now scheduled onto Fargate
+[ℹ]  "coredns" pods are now scheduled onto Fargate
+[ℹ]  kubectl command should work with "/Users/awsandy/.kube/config", try 'kubectl get nodes'
+[✔]  EKS cluster "ateksf" in "eu-west-1" region is ready
 
 
-
+```
 
 Next check the cluster has created ok
-```
+```console
 $ kubectl get nodes
 ```
 ```
-output
+NAME                                                    STATUS   ROLES    AGE   VERSION
+fargate-ip-192-168-140-21.eu-west-1.compute.internal    Ready    <none>   18m   v1.14.8-eks
+fargate-ip-192-168-152-202.eu-west-1.compute.internal   Ready    <none>   18m   v1.14.8-eks
 ```
 
+And that basic services are running
+
+```console
+$ kubectl get pods --all-namespaces
+```
+```
+NAMESPACE     NAME                       READY   STATUS    RESTARTS   AGE
+kube-system   aws-node-4gzb9             1/1     Running   0          23m
+kube-system   aws-node-ffrxf             1/1     Running   0          23m
+kube-system   coredns-56f75d76cb-gxm9r   1/1     Running   0          20m
+kube-system   coredns-56f75d76cb-vxv4g   1/1     Running   0          20m
+kube-system   kube-proxy-49fnc           1/1     Running   0          23m
+kube-system   kube-proxy-nkx9l           1/1     Running   0          23m
+
+```
 
 
 3. Examine all the resources that have been created
@@ -82,7 +105,7 @@ Can you find the stack set that was run by eksctl - what resources did it create
 <details>
 <summary>See how - click me</summary>
 <p>
-Using the Console Navigate to CloudFormation!
+Using the AWS Console navigate to CloudFormation!
 
 ```python
 print("hello world!")
