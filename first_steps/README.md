@@ -16,7 +16,7 @@ we will step through these stages in our next activit
 
 
     ```console
-    $ ~/environment/awstflab-code/2_first_steps (master) $ terraform init   
+    $ terraform init   
     ```                                                                                        
 
     ```
@@ -61,11 +61,13 @@ https://www.terraform.io/docs/providers/aws/r/vpc.html
 
 Next run the terraform plan command to get terraform to tell you what it intends to do and save the plan in an output file called "tfpaln"
 
-    ```console
-    terraform plan -out tfplan | more
-    ```
+ 
 
-    ```
+```console
+   $ terraform plan -out tfplan | more
+```
+
+```
 
     Refreshing Terraform state in-memory prior to plan...                                                
     The refreshed state will be used to calculate this plan, but will not be
@@ -111,7 +113,7 @@ Next run the terraform plan command to get terraform to tell you what it intends
 
     andyt530:~/environment/awstflab-code/2_first_steps (master) $   
 
-    ```
+```
 
 This is a dry run and shows which actions will be made. This allows manual verification of the changes before running the apply step.
 
