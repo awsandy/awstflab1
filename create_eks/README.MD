@@ -55,8 +55,8 @@ $ time eksctl create cluster --name=[yourinitials+eks] --fargate --alb-ingress-a
 
 **Make a note of the stack name**
 ```
-[ℹ]  building cluster stack "eksctl-ateksf-cluster"
-[ℹ]  deploying stack "eksctl-ateksf-cluster"
+[ℹ]  building cluster stack "eksctl-[yourclustername]-cluster"
+[ℹ]  deploying stack "eksctl-[yourclustername]-cluster"
 ```
 **..... output lines removed for brevity .....**
 
@@ -64,7 +64,7 @@ $ time eksctl create cluster --name=[yourinitials+eks] --fargate --alb-ingress-a
 [ℹ]  "coredns" is now scheduled onto Fargate
 [ℹ]  "coredns" pods are now scheduled onto Fargate
 [ℹ]  kubectl command should work with "/Users/awsandy/.kube/config", try 'kubectl get nodes'
-[✔]  EKS cluster "ateksf" in "eu-west-1" region is ready
+[✔]  EKS cluster "[yourclustername]" in "eu-west-1" region is ready
 
 
 ```

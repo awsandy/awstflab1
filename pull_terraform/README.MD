@@ -34,7 +34,7 @@ loop through providers
 /Users/awsandy/odp/aws/sw/aws2tf/generated/tf.111122223333-eks
 300-get-eks-cluster.sh
 all
-cluster name ateks1
+cluster name [yourclustername]
 get other stuff
 vpc-0913cefa99679c043
 aws_vpc.vpc-0913cefa99679c043: Importing from ID "vpc-0913cefa99679c043"...
@@ -52,7 +52,7 @@ aws_route_table.rtb-072106e2ccff8dfd7: Refreshing state... [id=rtb-072106e2ccff8
 aws_route_table.rtb-04168a54979d23519: Refreshing state... [id=rtb-04168a54979d23519]
 aws_route_table_association.rtbassoc-0f4e141aaf15a074a: Refreshing state... [id=rtbassoc-0f4e141aaf15a074a]
 aws_route_table_association.rtbassoc-0115c7b18869a02f3: Refreshing state... [id=rtbassoc-0115c7b18869a02f3]
-aws_eks_node_group.ateks1_ng-1bc7141a: Refreshing state... [id=ateks1:ng-1bc7141a]
+aws_eks_node_group.[yourclustername]_ng-1bc7141a: Refreshing state... [id=[yourclustername]:ng-1bc7141a]
 aws_route_table_association.rtbassoc-0e4c4bd87f99580f5: Refreshing state... [id=rtbassoc-0e4c4bd87f99580f5]
 
 ------------------------------------------------------------------------
@@ -87,15 +87,15 @@ Refreshing Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
 
-aws_iam_role_policy_attachment.eksctl-ateks1-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__AmazonEKSWorkerNodePolicy: Refreshing state... [id=eksctl-ateks1-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY-arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy]
-aws_iam_role_policy_attachment.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__AmazonEKSClusterPolicy: Refreshing state... [id=eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP-arn:aws:iam::aws:policy/AmazonEKSClusterPolicy]
+aws_iam_role_policy_attachment.eksctl-[yourclustername]-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__AmazonEKSWorkerNodePolicy: Refreshing state... [id=eksctl-[yourclustername]-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY-arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy]
+aws_iam_role_policy_attachment.eksctl-[yourclustername]-cluster-ServiceRole-M9Q1LA7D9GKP__AmazonEKSClusterPolicy: Refreshing state... [id=eksctl-[yourclustername]-cluster-ServiceRole-M9Q1LA7D9GKP-arn:aws:iam::aws:policy/AmazonEKSClusterPolicy]
 
 ```
 **..... output lines removed for brevity .....**
 ```
 aws_route_table_association.rtbassoc-0f4e141aaf15a074a: Refreshing state... [id=rtbassoc-0f4e141aaf15a074a]
 aws_route_table_association.rtbassoc-0e4c4bd87f99580f5: Refreshing state... [id=rtbassoc-0e4c4bd87f99580f5]
-aws_eks_node_group.ateks1_ng-1bc7141a: Refreshing state... [id=ateks1:ng-1bc7141a]
+aws_eks_node_group.[yourclustername]_ng-1bc7141a: Refreshing state... [id=[yourclustername]:ng-1bc7141a]
 
 ------------------------------------------------------------------------
 

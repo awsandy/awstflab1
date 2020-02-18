@@ -11,8 +11,8 @@ $ terraform destroy
 ```
 **..... output lines removed for brevity .....**
 ```
-          - "eksctl.cluster.k8s.io/v1alpha1/cluster-name" = "ateks1"
-          - "kubernetes.io/cluster/ateks1"                = "shared"
+          - "eksctl.cluster.k8s.io/v1alpha1/cluster-name" = "[yourclustername]"
+          - "kubernetes.io/cluster/[yourclustername]"                = "shared"
         } -> null
     }
 
@@ -35,12 +35,12 @@ aws_security_group_rule.sg-02984c8f9c87633cf: Destroying... [id=sgrule-200847828
 
 
 ```
-aws_eks_cluster.ateks1: Still destroying... [id=ateks1, 9m10s elapsed]
-aws_eks_cluster.ateks1: Still destroying... [id=ateks1, 9m20s elapsed]
+aws_eks_cluster.[yourclustername]: Still destroying... [id=[yourclustername], 9m10s elapsed]
+aws_eks_cluster.[yourclustername]: Still destroying... [id=[yourclustername], 9m20s elapsed]
 aws_subnet.subnet-03a107ac996fab132: Destruction complete after 0s
 aws_subnet.subnet-01d9337798ba5b52b: Destruction complete after 0s
 aws_subnet.subnet-029909c92d8b8920d: Destruction complete after 0s
-aws_iam_role.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP: Destruction complete after 1s
+aws_iam_role.eksctl-[yourclustername]-cluster-ServiceRole-M9Q1LA7D9GKP: Destruction complete after 1s
 ```
 
 **Note you may see an error at the end like this - it can be ignored**

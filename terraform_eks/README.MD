@@ -36,10 +36,10 @@ Terraform will perform the following actions:
 ```
       + owner_id                         = (known after apply)
       + tags                             = {
-          + "Name"                                        = "eksctl-ateks1-cluster/VPC"
-          + "alpha.eksctl.io/cluster-name"                = "ateks1"
-          + "eksctl.cluster.k8s.io/v1alpha1/cluster-name" = "ateks1"
-          + "kubernetes.io/cluster/ateks1"                = "shared"
+          + "Name"                                        = "eksctl-[yourclustername]-cluster/VPC"
+          + "alpha.eksctl.io/cluster-name"                = "[yourclustername]"
+          + "eksctl.cluster.k8s.io/v1alpha1/cluster-name" = "[yourclustername]"
+          + "kubernetes.io/cluster/[yourclustername]"                = "shared"
         }
     }
 
@@ -60,35 +60,35 @@ $ terraform apply tfplan
 
 ```
 aws_eip.eipalloc-03a57b18a7526b3fe: Creating...
-aws_iam_role.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP: Creating...
-aws_iam_role_policy.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__eksctl-ateks1-cluster-PolicyNLB: Creating...
-aws_iam_role_policy.eksctl-ateks1-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__eksctl-ateks1-nodegroup-ng-1bc7141a-PolicyALBIngress: Creating...
-aws_iam_role_policy_attachment.eksctl-ateks1-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__AmazonEKS_CNI_Policy: Creating...
-aws_iam_role_policy_attachment.eksctl-ateks1-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__AmazonEKSWorkerNodePolicy: Creating...
-aws_iam_role_policy_attachment.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__AmazonEKSServicePolicy: Creating...
-aws_iam_role_policy_attachment.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__AmazonEKSClusterPolicy: Creating...
+aws_iam_role.eksctl-[yourclustername]-cluster-ServiceRole-M9Q1LA7D9GKP: Creating...
+aws_iam_role_policy.eksctl-[yourclustername]-cluster-ServiceRole-M9Q1LA7D9GKP__eksctl-[yourclustername]-cluster-PolicyNLB: Creating...
+aws_iam_role_policy.eksctl-[yourclustername]-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__eksctl-[yourclustername]-nodegroup-ng-1bc7141a-PolicyALBIngress: Creating...
+aws_iam_role_policy_attachment.eksctl-[yourclustername]-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__AmazonEKS_CNI_Policy: Creating...
+aws_iam_role_policy_attachment.eksctl-[yourclustername]-nodegroup-ng-1bc714-NodeInstanceRole-L71RPARV2XTY__AmazonEKSWorkerNodePolicy: Creating...
+aws_iam_role_policy_attachment.eksctl-[yourclustername]-cluster-ServiceRole-M9Q1LA7D9GKP__AmazonEKSServicePolicy: Creating...
+aws_iam_role_policy_attachment.eksctl-[yourclustername]-cluster-ServiceRole-M9Q1LA7D9GKP__AmazonEKSClusterPolicy: Creating...
 ```
 **..... output lines removed for brevity .....**
 **Note this operation can take 15-20 minutes**
 
 ```
-aws_eks_cluster.ateksf: Still creating... [11m0s elapsed]
-aws_eks_cluster.ateksf: Still creating... [11m10s elapsed]
-aws_eks_cluster.ateksf: Still creating... [11m20s elapsed]
-aws_eks_cluster.ateksf: Creation complete after 11m22s [id=ateksf]
-aws_eks_node_group.ateksf_ng-96e8ad24: Creating...
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [10s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [20s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [30s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [40s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [50s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m0s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m10s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m20s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m30s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m40s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m50s elapsed]
-aws_eks_node_group.ateksf_ng-96e8ad24: Creation complete after 1m59s [id=ateksf:ng-96e8ad24]
+aws_eks_cluster.[yourclustername]: Still creating... [11m0s elapsed]
+aws_eks_cluster.[yourclustername]: Still creating... [11m10s elapsed]
+aws_eks_cluster.[yourclustername]: Still creating... [11m20s elapsed]
+aws_eks_cluster.[yourclustername]: Creation complete after 11m22s [id=[yourclustername]]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Creating...
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [10s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [20s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [30s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [40s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [50s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [1m0s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [1m10s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [1m20s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [1m30s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [1m40s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Still creating... [1m50s elapsed]
+aws_eks_node_group.[yourclustername]_ng-96e8ad24: Creation complete after 1m59s [id=[yourclustername]:ng-96e8ad24]
 
 Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
 
