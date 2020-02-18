@@ -5,10 +5,7 @@
 1. Delete the EKS cluster
    
 
-2. A Security Group
 
-
-3. A simple EC2 instance hosted in our subnet, protected by the security group
    
 
 

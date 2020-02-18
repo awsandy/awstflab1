@@ -32,7 +32,21 @@ aws_security_group_rule.sg-02984c8f9c87633cf: Destroying... [id=sgrule-200847828
 **..... output lines removed for brevity .....**
 **Note a destroy operatiobn will take about 15 minues to complete**
 
+```
+aws_eks_cluster.ateks1: Still destroying... [id=ateks1, 9m10s elapsed]
+aws_eks_cluster.ateks1: Still destroying... [id=ateks1, 9m20s elapsed]
+aws_subnet.subnet-03a107ac996fab132: Destruction complete after 0s
+aws_subnet.subnet-01d9337798ba5b52b: Destruction complete after 0s
+aws_subnet.subnet-029909c92d8b8920d: Destruction complete after 0s
+aws_iam_role.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP: Destruction complete after 1s
+```
 
+**Note you may see an error at the end like this - it can be ignored**
+
+```
+Error: InvalidParameterValue: cannot disassociate the main route table association rtbassoc-082561b86b786dab6
+	status code: 400, request id: a5dfc518-83bd-4345-bd5a-4bec9f81be3e
+```
 
 
 ### :star: Tips
