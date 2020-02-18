@@ -69,7 +69,7 @@ aws_iam_role_policy_attachment.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__A
 aws_iam_role_policy_attachment.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__AmazonEKSClusterPolicy: Creating...
 ```
 **..... output lines removed for brevity .....**
-**Note this operation can take up to 15 minutes**
+**Note this operation can take 15-20 minutes**
 
 ```
 

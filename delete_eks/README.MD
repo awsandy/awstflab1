@@ -6,8 +6,10 @@
 
 1. Delete the EKS cluster
    
+**Note this operation can take 15-20 minutes**
+
 ```console
-time eksctl delete cluster --name ateks1 --region eu-west-1
+time eksctl delete cluster --name [yourclustername] --region eu-west-1
 ```
 
 ```

@@ -4,6 +4,8 @@
 
 1. Destroy the cluster with Terraform
 
+**Note a destroy operation will take about 15-20 minutes to complete**
+
 ```console
 $ terraform destroy
 ```
@@ -30,7 +32,7 @@ aws_security_group_rule.sg-02984c8f9c87633cf: Destroying... [id=sgrule-200847828
 ```
    
 **..... output lines removed for brevity .....**
-**Note a destroy operatiobn will take about 15 minues to complete**
+
 
 ```
 aws_eks_cluster.ateks1: Still destroying... [id=ateks1, 9m10s elapsed]
