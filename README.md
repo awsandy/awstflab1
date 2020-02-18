@@ -1,4 +1,4 @@
-# awstflab1 March 18th
+# NHS BSA - AWS Terraform Lab - March 18th 2020
 
 
 ### Modules
