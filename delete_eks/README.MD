@@ -9,7 +9,7 @@
 **Note this operation can take 15-20 minutes**
 
 ```console
-time eksctl delete cluster --name [yourclustername] --region eu-west-1
+$ eksctl delete cluster --name [yourclustername] --region eu-west-1
 ```
 
 ```

@@ -72,8 +72,15 @@ aws_iam_role_policy_attachment.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__A
 **Note this operation can take 15-20 minutes**
 
 ```
-
+output
 ```
+
+### :star: Tips
+
+:bulb: <span style="color:red"> *If you see an error (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.*</span>
+
+The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a seond time will resolve this.
+
 
 3. Using the AWS command line retreive the credentials for you new cluster
 
