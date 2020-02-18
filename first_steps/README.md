@@ -121,7 +121,7 @@ Terraform uses these symbols to indicate the type of changes it will make
 
 ![Terraform stages](../images/planSymbols.png)
 
-<img width="200" height="200" src="https://raw.githubusercontent.com/awsandy/awstflab1/master/images/planSymbols.png" />
+<img width="200" height="200" src="https://github.com/awsandy/awstflab1/raw/master/images/planSymbols.png" />
 
 
 ## The Apply Stage
