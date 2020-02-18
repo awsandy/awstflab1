@@ -170,7 +170,7 @@ Now check on the console and see if the VPC has been created:
 
     # aws_vpc.main will be destroyed
     - resource "aws_vpc" "main" {
-        - arn                              = "arn:aws:ec2:eu-west-2:566972129213:vpc/vpc-06aefafe90da83b45" -> null
+        - arn                              = "arn:aws:ec2:eu-west-2:111122223333:vpc/vpc-06aefafe90da83b45" -> null
         - assign_generated_ipv6_cidr_block = false -> null
         - cidr_block                       = "10.0.0.0/16" -> null
         - default_network_acl_id           = "acl-031a8db49363f5908" -> null
@@ -182,7 +182,7 @@ Now check on the console and see if the VPC has been created:
         - id                               = "vpc-06aefafe90da83b45" -> null
         - instance_tenancy                 = "default" -> null
         - main_route_table_id              = "rtb-04053a1933a1d37c9" -> null
-        - owner_id                         = "566972129213" -> null
+        - owner_id                         = "111122223333" -> null
         - tags                             = {
             - "Name" = "main"
             } -> null

@@ -31,7 +31,7 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 Tue 18 Feb 2020 12:13:54 GMT
 loop through providers
-/Users/awsandy/odp/aws/sw/aws2tf/generated/tf.566972129213-eks
+/Users/awsandy/odp/aws/sw/aws2tf/generated/tf.111122223333-eks
 300-get-eks-cluster.sh
 all
 cluster name ateks1
