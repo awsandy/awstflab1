@@ -110,7 +110,9 @@ State path: terraform.tfstate
 The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a second time will resolve this.
 
 
-1. Using the AWS command line retreive the credentials for you new cluster
+### Once the Cluster has been created
+
+3. Using the AWS command line retreive the credentials for you new cluster
 
 ```console
 $ aws eks update-kubeconfig --name [yourclustername]
