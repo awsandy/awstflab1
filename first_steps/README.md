@@ -202,7 +202,7 @@ Now check on the console and see if the VPC has been created:
 
 ### Next
 
-:white_check_mark: Proceed to the first module, [Add additional resources](../3), 
+:white_check_mark: Proceed to the first module, [Add additional resources](../add_resources), 
 
 
 [region-table]: https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/

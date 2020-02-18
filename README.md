@@ -31,6 +31,9 @@ AWS Account & configure your AWS Cloud9 IDE and
 
 https://github.com/terraform-providers/terraform-provider-aws/tree/master/examples
 
+
+![Static website architecture](../images/spinning-gears.gif)
+
 ### collapsible markdown?
 <details>
 <summary>CLICK ME</summary>
