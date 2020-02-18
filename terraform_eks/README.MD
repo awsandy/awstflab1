@@ -1,6 +1,6 @@
 ## Re-create the EKS cluster using Terraform
 
-### In this lab we will
+### Re-create the EKS cluster using terraform
 
 1. Generate a terraform plan - and save the plan in a file
    
@@ -72,14 +72,41 @@ aws_iam_role_policy_attachment.eksctl-ateks1-cluster-ServiceRole-M9Q1LA7D9GKP__A
 **Note this operation can take 15-20 minutes**
 
 ```
-output
+aws_eks_cluster.ateksf: Still creating... [11m0s elapsed]
+aws_eks_cluster.ateksf: Still creating... [11m10s elapsed]
+aws_eks_cluster.ateksf: Still creating... [11m20s elapsed]
+aws_eks_cluster.ateksf: Creation complete after 11m22s [id=ateksf]
+aws_eks_node_group.ateksf_ng-96e8ad24: Creating...
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [10s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [20s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [30s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [40s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [50s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m0s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m10s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m20s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m30s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m40s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Still creating... [1m50s elapsed]
+aws_eks_node_group.ateksf_ng-96e8ad24: Creation complete after 1m59s [id=ateksf:ng-96e8ad24]
+
+Apply complete! Resources: 9 added, 0 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
 ```
 
 ### :star: Tips
 
 :bulb: <span style="color:red"> *If you see an error (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.* </span>
 
-<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span></p>
+```diff
+- Some Markdown text with <span style="color:blue">some <em>blue</em> text</span></p>
+```
 
 The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a second time will resolve this.
 
@@ -87,23 +114,34 @@ The is caused by some dependacies and race conditions between the Cluster's Role
 3. Using the AWS command line retreive the credentials for you new cluster
 
 ```console
-$ aws eks update-cluster-config --name [yourclustername]
+$ aws eks update-kubeconfig --name [yourclustername]
+```
+```
+Added new context arn:aws:eks:eu-west-1:111122223333:cluster/[yourclustername] to /Users/youruser/.kube/config
 ```
 4. Check the cluster is operational
 
 ```console
-kubectl get pods --all-namespaces
+$ kubectl get pods --all-namespaces
 ```
 
 ```
-output
+NAMESPACE     NAME                       READY   STATUS    RESTARTS   AGE
+kube-system   aws-node-gzqdf             1/1     Running   0          5m10s
+kube-system   aws-node-qw7tp             1/1     Running   0          5m24s
+kube-system   coredns-5fd8748bdd-5d7pz   1/1     Running   0          9m5s
+kube-system   coredns-5fd8748bdd-ns7qz   1/1     Running   0          9m4s
+kube-system   kube-proxy-fhvpm           1/1     Running   0          5m24s
+kube-system   kube-proxy-sdb2n           1/1     Running   0          5m10s
 ```
 
 ```console
-$kubectl get nodes
+$ kubectl get nodes
 ```
 ```
-output
+NAME                                           STATUS   ROLES    AGE     VERSION
+ip-192-168-58-200.eu-west-1.compute.internal   Ready    <none>   5m57s   v1.14.7-eks-1861c5
+ip-192-168-81-4.eu-west-1.compute.internal     Ready    <none>   5m43s   v1.14.7-eks-1861c5
 ```
 
 ### :star: Tips
