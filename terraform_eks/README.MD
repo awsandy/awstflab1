@@ -102,7 +102,8 @@ State path: terraform.tfstate
 
 ### :star: Tips
 
-:bulb: ```diff
+:bulb: 
+```diff
 - If you see errors (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.* 
 ```
 The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a second time will resolve this.
@@ -113,9 +114,11 @@ The is caused by some dependacies and race conditions between the Cluster's Role
 ```console
 $ aws eks update-kubeconfig --name [yourclustername]
 ```
+
 ```
 Added new context arn:aws:eks:eu-west-1:111122223333:cluster/[yourclustername] to /Users/youruser/.kube/config
 ```
+
 4. Check the cluster is operational
 
 ```console
