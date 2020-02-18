@@ -18,11 +18,11 @@ architecture and verify your work.
 | [Delete the EKS cluster !](delete-eks) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
 | [Re-create the EKS cluster from Terraform](terraform_eks) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
 
-After you have completed the workshop you can delete all of the resources that were created by following the [cleanup guide][cleanup].
+After you have completed the workshop you can delete all of the resources that were created by following the [cleanup guide](cleanup).
 
 ### Next
 
-:white_check_mark: Review and follow the directions in the [Initial setup guide][setup],
+:white_check_mark: Review and follow the directions in the [Initial setup guide](setup),
 wherein you'll setup pre-requisites like an
 AWS Account & configure your AWS Cloud9 IDE and 
 
