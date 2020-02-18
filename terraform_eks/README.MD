@@ -77,9 +77,11 @@ output
 
 ### :star: Tips
 
-:bulb: <span style="color:red"> *If you see an error (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.*</span>
+:bulb: <span style="color:red"> *If you see an error (red text) during this operation - Just repeat the terraform  pland and terraform apply commands one more time.* </span>
 
-The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a seond time will resolve this.
+<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span></p>
+
+The is caused by some dependacies and race conditions between the Cluster's Roles/Policies and the Cluster creation. Running the plan/apply a second time will resolve this.
 
 
 3. Using the AWS command line retreive the credentials for you new cluster
