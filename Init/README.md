@@ -35,20 +35,20 @@ In this section we will download a helper script that will install terraform int
     ~/environment/awstflab-code/scripts (master) $ sh -v 01-install-terraform.sh
     ```
     ```
-    wget https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
-    --2020-02-07 11:39:38--  https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip
+    wget https://releases.hashicorp.com/terraform/0.12.21/terraform_0.12.21_linux_amd64.zip
+    --2020-02-07 11:39:38--  https://releases.hashicorp.com/terraform/0.12.21/terraform_0.21.18_linux_amd64.zip
     Resolving releases.hashicorp.com (releases.hashicorp.com)... 199.232.57.183, 2a04:4e42:4b::439
     Connecting to releases.hashicorp.com (releases.hashicorp.com)|199.232.57.183|:443... connected.
     HTTP request sent, awaiting response... 200 OK
     Length: 16519860 (16M) [application/zip]
-    Saving to: ‘terraform_0.12.18_linux_amd64.zip’
+    Saving to: ‘terraform_0.12.21_linux_amd64.zip’
 
-    terraform_0.12.18_linux_amd64.zip                    100%[===================================================================================================================>]  15.75M  --.-KB/s    in 0.1s    
+    terraform_0.12.21_linux_amd64.zip                    100%[===================================================================================================================>]  15.75M  --.-KB/s    in 0.1s    
 
-    2020-02-07 11:39:39 (137 MB/s) - ‘terraform_0.12.18_linux_amd64.zip’ saved [16519860/16519860]
+    2020-02-07 11:39:39 (137 MB/s) - ‘terraform_0.12.21_linux_amd64.zip’ saved [16519860/16519860]
 
-    unzip terraform_0.12.18_linux_amd64.zip
-    Archive:  terraform_0.12.18_linux_amd64.zip
+    unzip terraform_0.12.21_linux_amd64.zip
+    Archive:  terraform_0.12.21_linux_amd64.zip
     inflating: terraform               
     sudo mv terraform /usr/local/bin/
     ~/environment/awstflab-code/scripts (master) $ 
