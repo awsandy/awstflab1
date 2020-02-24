@@ -1,6 +1,6 @@
 ## Lab 3 Add resources
 
-### In this lab we will add soem basic resources to the VPC using terraform
+### In this lab we will add some basic resources to the VPC using terraform
 
 1. A public subnet
    
