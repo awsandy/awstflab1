@@ -5,6 +5,9 @@
 1. Run the tool to create the Terraform for EKS
 
 ```console
+$ cd ~/environment
+$ git clone https://github.com/awsandy/aws2tf.git
+$ cd aws2tf
 $ ./eks2th.sh
 ```
 
