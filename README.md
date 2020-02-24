@@ -11,13 +11,13 @@ architecture and verify your work.
 | Module | Description |
 | ---------------- | -------------------------------------------------------- |
 | [Initial setup guide](setup) | Login to your lab AWS account and create an AWS Cloud9 environment in region eu-west-1 (Ireland). |
-| [Initialize Terraform](Init) | Configure user management for the website using Amazon Cognito. |
-| [First steps with Terraform](first_steps) | Create an AWS Lambda function that will persist data to an Amazon DynamoDB table. |
-| [Add Resources](add_resources) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
-| [Create an EKS Cluster with the command line](create_eks)] | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
-| [Automatically generate Terraform code for EKS](pull_terraform) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
-| [Delete the EKS cluster !](delete-eks) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
-| [Re-create the EKS cluster from Terraform](terraform_eks) | Expose the Lambda function via an Amazon API Gateway as a RESTful API that the static site can call. |
+| [Initialize Terraform](Init) | Download and install terraform |
+| [First steps with Terraform](first_steps) | Create a VPC using Terraform |
+| [Add Resources](add_resources) | Add some additional resources to your VPC and examine Terraforn state |
+| [Create an EKS Cluster with the command line](create_eks)] | Create an EKS cluster on AWS using the eksctl command line |
+| [Automatically generate Terraform code for EKS](pull_terraform) | Use the provided tool to import the EKS cluster into Terraform and automaticvally generate terraform files. |
+| [Delete the EKS cluster !](delete-eks) | Delete the EKS cluster using the eksctl command and delete the residual VPC. |
+| [Re-create the EKS cluster from Terraform](terraform_eks) | Using the previously automatically generated Terraform re-create the EKS cluster on AWS. |
 
 After you have completed the workshop you can delete all of the resources that were created by following the [cleanup guide](cleanup).
 
