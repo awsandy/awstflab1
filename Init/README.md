@@ -14,7 +14,7 @@ In this section we will download a helper script that will install terraform int
     ```console
     ~/environment $ git clone git clone https://github.com/awsandy/awstflab1-code.git
     ```
-    
+    ```
     Cloning into 'awstflab-code'...
     remote: Enumerating objects: 8, done.
     remote: Counting objects: 100% (8/8), done.
@@ -31,7 +31,7 @@ In this section we will download a helper script that will install terraform int
 
 2. Run the helper script to install terraform
 
-    ```
+    ```console
     ~/environment/awstflab-code/scripts (master) $ sh -v 01-install-terraform.sh
     ```
     ```
