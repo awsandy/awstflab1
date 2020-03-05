@@ -105,9 +105,9 @@ Can you find the stack set that was run by eksctl - what resources did it create
 <details>
 <summary>See how - click me</summary>
 <p><ul>
-<li>Using the AWS Console navigate to CloudFormation</li>
-<li>Look for a stack name eksctl-[yourname]-cluster and click it's link</li>
-<li>Look in the Events and Resources tabs to see what has been created</li>
+<li>Using the AWS Console navigate to CloudFormation.</li>
+<li>Look for a stack name eksctl-[yourname]-cluster and click it's link.</li>
+<li>Look in the Events and Resources tabs to see what has been created.</li>
 </ul><p>
 </details>
 
@@ -116,9 +116,7 @@ Can you find the stack set that was run by eksctl - what resources did it create
 
 ### :star: Recap
 
-:key: Use a unique personal or development [AWS account](#aws-account)
-
-:key: Keep your [AWS Cloud9 IDE](#aws-cloud9-ide) opened in a tab
+:key: In this section we have created a new EKS (fareate cluster) using the eksctl command line tool
 
 ### Next
 
