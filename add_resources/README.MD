@@ -15,6 +15,8 @@ Add a subnet named "subnet1" to your configuration with a CIDR of 10.0.1.0/24
 <details>
 <summary>Solution - click me</summary>
 <p>
+subnet.tf
+
 ```
 resource "aws_subnet" "main" {
   vpc_id     = "${aws_vpc.main.id}"
@@ -24,6 +26,7 @@ resource "aws_subnet" "main" {
     Name = "Main"
   }
 }
+
 ```
 <p>
 </details>
