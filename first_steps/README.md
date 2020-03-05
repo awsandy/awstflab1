@@ -151,6 +151,14 @@ Now check on the console and see if the VPC has been created:
 
 ![Console](../images/console1.jpg)
 
+## Examine what Terraform "knows" - look at it's local state (database)
+
+```console
+$ terraform state list
+$ terraform state show aws_vpc.main
+```
+
+Notice how similar this output is to our original .tf file
 
 
 
