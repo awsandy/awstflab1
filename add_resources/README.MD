@@ -79,15 +79,15 @@ Open the two solutions above if you haven't already - notice the two different w
 
 In the `$ terraform plan .` commands note that some were adding resources, others changing existing resources and some deleteing resources. Very useful to understand before using apply.
 
+----
 
-
----
-
-## Layering Terraform divided responsibilities & multiple teams
+## Layering Terraform 
+### Divided responsibilities & multiple teams
 
 In this next section we are going to imagine:
 
 * You firstly belong to Team 1: A central team is responsible to creating and deploying VPC's. 
+
 * The secondly you belong to Team 2: Your job is to consume the VPC's provided. Within these pre-created VPC's your team are responsible for creating subnets - but must not create or detroy and existing VPC's.
 
 To achive this Terrafor provides "Data Sources" allow you to safely refer to existing infrastructure that typically soemone else has created.
