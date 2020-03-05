@@ -155,9 +155,36 @@ Now check on the console and see if the VPC has been created:
 
 ```console
 $ terraform state list
+```
+```
+aws_vpc.main
+```
+```console
 $ terraform state show aws_vpc.main
 ```
-
+```
+# aws_vpc.main:
+resource "aws_vpc" "main" {
+    arn                              = "arn:aws:ec2:eu-west-1:566972129213:vpc/vpc-02ea7979d995d486f"
+    assign_generated_ipv6_cidr_block = false
+    cidr_block                       = "10.0.0.0/16"
+    default_network_acl_id           = "acl-03a1d5aadc72408f0"
+    default_route_table_id           = "rtb-0983207b18cf478c8"
+    default_security_group_id        = "sg-08a24fdf3dc573e0e"
+    dhcp_options_id                  = "dopt-ee743588"
+    enable_classiclink               = false
+    enable_classiclink_dns_support   = false
+    enable_dns_hostnames             = false
+    enable_dns_support               = true
+    id                               = "vpc-02ea7979d995d486f"
+    instance_tenancy                 = "dedicated"
+    main_route_table_id              = "rtb-0983207b18cf478c8"
+    owner_id                         = "566972129213"
+    tags                             = {
+        "Name" = "main"
+    }
+}
+```
 Notice how similar this output is to our original .tf file
 
 
