@@ -157,13 +157,13 @@ output "mycidr_block" {
 ```
 
 ```
-terraform refresh
+$ terraform refresh
 ```
 ```
-teraaform state show data.aws_vpc.main
+$ terraform state show data.aws_vpc.main
 ```
 ```
-terraform output
+$ terraform output
 ```
 **Note the output variables are shown**
 ```
@@ -178,7 +178,7 @@ Edit a new file subnet.tf
 
 ```
 resource "aws_subnet" "subnet2" {
-  vpc_id     = data.aws_vpc.main.myvpc_id
+  vpc_id     = data.aws_vpc.main.id
 
   tags = {
     Name = "Main"
@@ -187,6 +187,8 @@ resource "aws_subnet" "subnet2" {
 }
 
 ```
+Note the reference for the vpid_id begins **data**.aws_vpc.main.id
+
 
 ```console
 $ terraform plan .
@@ -203,13 +205,12 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 ### :star: Recap
 
-:key: Use a unique personal or development [AWS account](#aws-account)
+:key: In this section we have seen how to add/modify and delete terraform resources. 
 
-:key: Keep your [AWS Cloud9 IDE](#aws-cloud9-ide) opened in a tab
+We have also looked at layering resources using data statements
+
 
 ### Next
 
 :white_check_mark: Proceed to the next module, [Create an EKS Cluster](../create_eks).
-
-
 
