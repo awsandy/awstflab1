@@ -101,15 +101,13 @@ kube-system   kube-proxy-nkx9l           1/1     Running   0          23m
 Using the AWS console find the VPC that EKS created - what other resources have been created ? 
 
 Can you find the stack set that was run by eksctl - what resources did it create ?
-### How to do that
+
 <details>
 <summary>See how - click me</summary>
 <p>
-Using the AWS Console navigate to CloudFormation!
-
-```python
-print("hello world!")
-```
+Using the AWS Console navigate to CloudFormation
+Look for a stack name eksctl-[yourname]-cluster and click it's link
+Look in the Events and Resources tabs to see what has been created
 </p>
 </details>
 
