@@ -3,15 +3,23 @@
 ### In this lab we will add some basic resources to the VPC using terraform
 
 1. A public subnet
+
+Add a subnet to your configurations
+
+### :star: TIP
+
+:key: Create a new file subnet.tf
+
+:key: Use the terraform documentation for guidance https://www.terraform.io/docs/providers/aws/r/subnet.html
    
 
-2. A Security Group
+1. A Security Group
 
 
-3. A simple EC2 instance hosted in our subnet, protected by the security group
+2. A simple EC2 instance hosted in our subnet, protected by the security group
    
 
-4. Cleanup with terraform destroy
+3. Cleanup with terraform destroy
 
 
 

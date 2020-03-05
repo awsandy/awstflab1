@@ -113,11 +113,6 @@ Look in the Events and Resources tabs to see what has been created
 
 
 
-### :star: Tips
-
-:bulb: Keep an open scratch pad in Cloud9 or a text editor on your local computer
-for notes.  When the step-by-step directions tell you to note something such as
-an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
 
 ### :star: Recap
 
