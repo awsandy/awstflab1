@@ -86,11 +86,11 @@ In the `$ terraform plan .` commands note that some were adding resources, other
 
 In this next section we are going to imagine:
 
-* You firstly belong to Team 1: A central team is responsible to creating and deploying VPC's. 
+* You firstly belong to Team 1: A central team your responsible for creating and deploying VPC's tahgt others consume but should not change / add or delete. 
 
-* The secondly you belong to Team 2: Your job is to consume the VPC's provided. Within these pre-created VPC's your team are responsible for creating subnets - but must not create or detroy and existing VPC's.
+* Secondly you belong to Team 2: Your job is to consume the VPC's provided by Team 1. Within these pre-created VPC's your team are responsible for creating subnets.
 
-To achive this Terrafor provides "Data Sources" allow you to safely refer to existing infrastructure that typically soemone else has created.
+To achive this Terrafor provides "Data Sources". These allow you to safely refer to existing infrastructure that typically someone else has created.
 
 
 :white_check_mark: 4. Use a data source for the VPC
