@@ -2,9 +2,9 @@
 
 ### In this lab we will add some basic resources to the VPC using terraform
 
-1. A public subnet
+1. Add a subnet
 
-Add a subnet to your configurations
+Add a subnet named "subnet1" to your configuration with a CIDR of 10.0.1.0/24
 
 ### :star: TIP
 
@@ -12,22 +12,58 @@ Add a subnet to your configurations
 
 :key: Use the terraform documentation for guidance https://www.terraform.io/docs/providers/aws/r/subnet.html
    
+<details>
+<summary>Solution - click me</summary>
+<p>
+```
+resource "aws_subnet" "main" {
+  vpc_id     = "${aws_vpc.main.id}"
+  cidr_block = "10.0.1.0/24"
 
-1. A Security Group
+  tags = {
+    Name = "Main"
+  }
+}
+```
+<p>
+</details>
 
 
-2. A simple EC2 instance hosted in our subnet, protected by the security group
-   
+Peform a terraform plan and terraform apply
+check the subnet has been created in the AWS console
 
-3. Cleanup with terraform destroy
+Use the terraform state list and terraform state show commands to look at the local version of the configuration
+
+2. Now add another tag to the subnet.tf file 
+```
+Environment="Development"
+```
+
+Rerun terraform plan and terraform apply
+
+
+3.  Next - delete the subnet.tf file
+
+Rerun terraform plan and terraform apply
+
+### :question: What happens ?
+
+
+---
+
+## Layering Terraform )divided responsibilities & multiple teams
+
+In this next section we are going to imagine:
+
+*A central team is responsible to creating and deploying VPC's. Your job is to consume the VPC's provided.
+*Within these pre-created VPC's you are responsible for creating subnets - but must not create or detroy and existing VPC's
 
 
 
-### :star: Tips
 
-:bulb: Keep an open scratch pad in Cloud9 or a text editor on your local computer
-for notes.  When the step-by-step directions tell you to note something such as
-an ID or Amazon Resource Name (ARN), copy and paste that into the scratch pad.
+
+
+
 
 ### :star: Recap
 
