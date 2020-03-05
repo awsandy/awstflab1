@@ -32,10 +32,10 @@ resource "aws_subnet" "main" {
 </details>
 
 
-Peform a terraform plan and terraform apply
+Peform a `$ terraform plan .` and `$ terraform apply .`
 check the subnet has been created in the AWS console
 
-Use the `terraform state list` and `terraform state show xxx.yyy`  commands to look at the local version of the configuration
+Use the `$ terraform state list` and `$ terraform state show xxx.yyy`  commands to look at the local version of the configuration
 
 :white_check_mark: 2. Now add another tag to the subnet.tf file 
 ```
@@ -62,22 +62,22 @@ resource "aws_subnet" "subnet1" {
 <p>
 </details>
 
-Rerun `terraform plan` and `terraform apply`
+Rerun `$ terraform plan .` and `$ terraform apply .`
 
 #### :question: What happens & why?
 
 
 :white_check_mark: 3.  Next - delete the subnet.tf file
 
-Rerun `terraform plan` and `terraform apply`
+Rerun `$ terraform plan .` and `$ terraform apply .`
 
 #### :question: What happens & why?
 
 
 ### :star: Things to note
-Open the two solutions above if you haven't already - notive the two different ways to deference (refer to) the VPC id - the later is Terraform v12 style and much cleaner than the former Terraform v11 style.
+Open the two solutions above if you haven't already - notice the two different ways to deference (refer to) the VPC id - the later is Terraform v12 style `aws_vpc.main.id` and much cleaner than the former Terraform v11 `"${aws_vpc.main.id}"` style.
 
-In the `terraform plan .` commands note that some were adding resources, others changing existing resources and soem deleteing resources. Very useful to understand before using apply.
+In the `$ terraform plan .` commands note that some were adding resources, others changing existing resources and some deleteing resources. Very useful to understand before using apply.
 
 
 
@@ -87,11 +87,10 @@ In the `terraform plan .` commands note that some were adding resources, others 
 
 In this next section we are going to imagine:
 
-* Team 1: A central team is responsible to creating and deploying VPC's. Your job is to consume the VPC's provided.
-* Team 2: Within these pre-created VPC's your team are responsible for creating subnets - but must not create or detroy and existing VPC's
+* You firstly belong to Team 1: A central team is responsible to creating and deploying VPC's. 
+* The secondly you belong to Team 2: Your job is to consume the VPC's provided. Within these pre-created VPC's your team are responsible for creating subnets - but must not create or detroy and existing VPC's.
 
 To achive this Terrafor provides "Data Sources" allow you to safely refer to existing infrastructure that typically soemone else has created.
-
 
 
 :white_check_mark: 4. Use a data source for the VPC
@@ -114,9 +113,7 @@ At this point a terraform plan should return nothing:
 $ terraform plan .
 ```
 ```
-The refreshed state will be used to calculate this plan, but will not be
-persisted to local or remote state storage.
-
+The refreshed state will be used to calculate this plan, but will not bepersisted to local or remote state storage.
 
 ------------------------------------------------------------------------
 
@@ -199,8 +196,6 @@ $ terraform plan .
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```
 ## :bulb: Note how the plan is just adding the subnet - we no longer are creating/destroying the VPC just referring to it via the data source
-
-
 
 
 ### :star: Recap
