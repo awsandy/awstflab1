@@ -199,14 +199,6 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 ## :bulb: Note how the plan is just adding the subnet - we no longer are creating/destroying the VPC just referring to it via the data source
 
 
-## Importing existing resources
-
-What if many AWS resources already exist - is there a way to "import" existing resources
-
-
-
-
-
 
 
 ### :star: Recap
