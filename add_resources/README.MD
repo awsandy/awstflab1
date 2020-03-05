@@ -2,7 +2,7 @@
 
 ### In this lab we will add some basic resources to the VPC using terraform
 
-1. Add a subnet
+:white_check_mark: 1. Add a subnet
 
 Add a subnet named "subnet1" to your configuration with a CIDR of 10.0.1.0/24
 
@@ -37,7 +37,7 @@ check the subnet has been created in the AWS console
 
 Use the **terraform state list** and **terraform state show xxx.yyy**  commands to look at the local version of the configuration
 
-2. Now add another tag to the subnet.tf file 
+:white_check_mark: 2. Now add another tag to the subnet.tf file 
 ```
 Environment = "Development"
 ```
@@ -47,7 +47,7 @@ Rerun **terraform plan** and **terraform apply**
 #### :question: What happens & why?
 
 
-3.  Next - delete the subnet.tf file
+:white_check_mark: 3.  Next - delete the subnet.tf file
 
 Rerun **terraform plan** and **terraform apply**
 
