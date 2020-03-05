@@ -35,23 +35,24 @@ resource "aws_subnet" "main" {
 Peform a terraform plan and terraform apply
 check the subnet has been created in the AWS console
 
-Use the *terraform state list* and *terraform state show xxx.xxx*  commands to look at the local version of the configuration
+Use the **terraform state list** and **terraform state show xxx.yyy**  commands to look at the local version of the configuration
 
 2. Now add another tag to the subnet.tf file 
 ```
-Environment="Development"
+Environment = "Development"
 ```
 
-Rerun terraform plan and terraform apply
+Rerun **terraform plan** and **terraform apply**
 
-#### :question: What happens ?
+#### :question: What happens & why?
 
 
 3.  Next - delete the subnet.tf file
 
-Rerun terraform plan and terraform apply
+Rerun **terraform plan** and **terraform apply**
 
-#### :question: What happens ?
+#### :question: What happens & why?
+
 
 
 ---
