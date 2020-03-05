@@ -105,10 +105,10 @@ Can you find the stack set that was run by eksctl - what resources did it create
 <details>
 <summary>See how - click me</summary>
 <p><ul>
-Using the AWS Console navigate to CloudFormation
-Look for a stack name eksctl-[yourname]-cluster and click it's link
-Look in the Events and Resources tabs to see what has been created
-</p></ul>
+<li>Using the AWS Console navigate to CloudFormation</li>
+<li>Look for a stack name eksctl-[yourname]-cluster and click it's link</li>
+<li>Look in the Events and Resources tabs to see what has been created</li>
+</ul><p>
 </details>
 
 
